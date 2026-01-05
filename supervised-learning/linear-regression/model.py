@@ -22,12 +22,15 @@ class LinearRegression:
             loss = np.mean((y - y_pred) ** 2)
             self.losses.append(loss)
 
+            # Calculate our Partial Derivatives
             dw = (1/n_samples) * np.dot(X.T, (y_pred - y))
             db = (1/n_samples) * np.sum(y_pred - y)
 
+            # Update our weights
             self.weights -= self.lr * dw
             self.bias -= self.lr * db
 
+            # Snapshot of weights and bias
             if i % self.snapshot == 0:
                 self.history.append((self.weights.copy(), self.bias))
 
