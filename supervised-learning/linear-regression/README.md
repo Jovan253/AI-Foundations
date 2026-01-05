@@ -8,12 +8,10 @@ Linear Regression models the relationship between input features and a continuou
 
 The model can be defined as $\hat{y} = Xw + b$
 
-Our matrix X is the feature matrix, each row is a sample and each column represents a feature
-
-$\hat{y}$ is the predicted output
-
-Our weights, w, shows how important each feature is
-And Bias shifts our line up and down, b
+- Our matrix X is the feature matrix, each row is a sample and each column represents a feature
+- $\hat{y}$ is the predicted output
+- Our weights, w, shows how important each feature is
+- And Bias shifts our line up and down, b
 
 The true labels y are a vector of true values corresponding to each sample in X
 
