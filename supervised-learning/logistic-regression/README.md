@@ -6,6 +6,8 @@ The model remains the same.
 
 $z = Wx + b$
 
+And what we're looking to do is to transform this to get probabilities for classes of 0 or 1. 
+
 
 ## Sigmoid Function
 
@@ -13,7 +15,7 @@ We transform z into a probability
 
 $\hat{y} = \sigma{(z)} = \frac{1}{1+e^{-z}}$
 
-If predicted value is close to 0 then class is 0, otherwise 1
+If predicted value is close to 0 then class is 0, otherwise 1. (The Decision Rule)
 
 
 ## Loss Function
