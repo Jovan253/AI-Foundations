@@ -48,3 +48,11 @@ $$
 Then we update the parameters providing a learning rate to control the step size.
 
 We do this over many iterations, allowing our step to move closer to the minimum
+
+
+## Missing
+
+Right now the model is trained and tested on same data which is not great.
+You would want to split the data into training and testing data.
+
+You want the loss of training and testing to be about the same to avoid overfitting and underfitting.

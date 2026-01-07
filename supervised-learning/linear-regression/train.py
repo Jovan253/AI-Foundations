@@ -20,6 +20,7 @@ y = np.array([3, 5, 8, 10, 13, 15])
 model = LinearRegression()
 model.fit(X,y)
 
+# Note you should train and test on different data
 predictions = model.predict(X)
 mse = mean_squared_error(y, predictions)
 
