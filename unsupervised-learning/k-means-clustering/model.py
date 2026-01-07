@@ -7,7 +7,7 @@ class KMeans:
         self.centroids = None
         self.labels = None
 
-        self.record_every = 10
+        self.snapshot = 10
         self.history = []
 
     def assign_clusters(self, X):
@@ -35,7 +35,7 @@ class KMeans:
                 for j in range(self.k)
             ])
 
-            if i % self.record_every == 0:
+            if i % self.snapshot == 0:
                 self.history.append(
                     (self.centroids.copy(), self.labels.copy())
                 )

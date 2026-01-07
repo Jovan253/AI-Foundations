@@ -28,5 +28,5 @@ for step, (centroids, labels) in enumerate(model.history):
         marker="x"
     )
 
-    plt.title(f"Iteration {step * model.record_every}")
+    plt.title(f"Iteration {step * model.snapshot}")
     plt.show()
